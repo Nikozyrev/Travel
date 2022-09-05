@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Aleo:regular,italic,700,700italic&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text:regular,500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Magra:700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+    <title>Travel Portal</title>
+</head>
+<body class="body">
+    <div class="wrapper">
+        <div class="login__pop_up">
+            <div class="login__sign_in">
+                <div class="login__container">
+                    <h2 class="login__sign_in__title">Log in to your account</h2>
+                        <div class="login__buttons">
+                            <div>
+                                <button class="login__sign_in__Facebook"> 
+                                    <img src="/img/FB_popup.jpg" alt="FB">
+                                    <span>Sign In with Facebook</span>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="login__sign_in__Google">
+                                    <img src="/img/Google_popup.jpg" alt="goog">
+                                    <span>Sign In with Google</span>
+                                </button>
+                            </div>
+                            <div class="login__sign_in__divider"><span class="login__sign_in__divider_text">or</span></div>
+                    </div>
+                    <form class="login__sign_in__form">
+                        <div class="login__sign_in__form__email">
+                            <p>E-mail</p>
+                            <input id = "email_input" class="sign_in__input__email" type="email">
+                        </div>
+                        <div class="login__sign_in__form__password">
+                            <p>Password</p>
+                            <input class="sign_in__input__password" type="password">
+                        </div>
+                        <button class="login__sign_in__form__button">Sign In</button>
+                    </form>
+                    <div class="login__sign_in__password__recovery"><a href="#">Forgot Your Password?</a></div>
+                    <div class="login__sign_in__register"><span>Don’t have an account?</span> <a id="login__sign_in__register__button" href="#">Register</a></div>
+                </div>
+            </div>
+            <div class="login__sign_up">
+                <div class="login__container">
+                    
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="header__container _container">
+                <div class="header__logo">
+                    <img src="img/logo.svg" alt="logo">
+                    <span>Travel Portal</span>
+                </div>
+                <div class="header__burger">
+                    <img src="./img/burger_line.svg" alt="__">
+                    <img src="./img/burger_line.svg" alt="__">
+                    <img src="./img/burger_line.svg" alt="__">
+                </div>
+                <nav class="header__menu menu">
+                    <div class="header__cross">
+                        <img src="./img/burger_cross.svg" alt="X">
+                    </div>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#how_it_works" class="menu__link">How It Works</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#plan_your_trip" class="menu__link">Plan Your Trip</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#destinations" class="menu__link">Destinations</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#stories" class="menu__link">Travel Stories</a>
+                        </li>
+                        <li id="account_button" class="menu__item menu__item__mob">
+                            <a href="#" class="menu__link">Account</a>
+                        </li>
+                        <li class="menu__item menu__item__mob">
+                            <a href="#footer" class="menu__link">Social Media</a>
+                        </li>
+                    </ul>                
+                </nav>
+                <div class="header__login">
+                    <form action="#">
+                        <button class="header_button _button">
+                            Login
+                        </button> 
+                    </form>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section class="page__preview preview"> 
+                <div class="preview__gradient">
+                    <div class="preview__container _container">
+                        <div class="preview__body">
+                            <h1 class="preview__title" id="how_it_works">Explore the beauty of the World</h1>
+                            <div class="preview__text">Receive personalized recommendations for countries, hotels, activities and more</div>
+                            <div class="preview__form">
+                                <form class="preview__form__form" action="#">
+                                    <input class="preview__input " type="text" placeholder="What would you like to do?">
+                                    <button class="preview__button _button">Start Planning</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview__image _ibg">
+                    <picture>
+                        <source media="(min-width: 391px)" srcset="img/preview.jpg" type="image/jpeg">
+                        <source media="(max-width: 391px)" srcset="img/preview_m.jpg" type="image/jpeg">
+                        <img src="img/preview.jpg" alt="cover">
+                    </picture>
+                </div>
+            </section>
+ 
+            <section class="page__steps steps">
+                <div class="steps__container _container">
+                    <h2 class="steps__title _title" id="plan_your_trip">3 STEPS TO THE PERFECT TRIP</h2>
+                    <div class="steps__content">
+                        <div class="steps__column steps__column_1">
+                            <div class="steps_image">
+                                <img class="steps_image_img" src="img/steps1.svg" alt="steps1">
+                            </div>
+                            <p class="steps__text">Tell us what you want to do</p>
+                        </div>
+                        <div class="steps__column steps__column_2">
+                            <div class="steps_image">
+                                <img class="steps_image_img" src="img/steps2.svg" alt="steps1">
+                            </div>
+                            <p class="steps__text">Share us preferable dates</p>
+                        </div>
+                        <div class="steps__column steps__column_3">
+                            <div class="steps_image">
+                                <img class="steps_image_img" src="img/steps3.svg" alt="steps1">
+                            </div>
+                            <p class="steps__text">We will give you recommendations</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__destinations destinations">
+                <h2 class="destinations__title _title" id="destinations">POPULAR DESTINATIONS</h2>
+                <div class="destinations__main">
+                    <div class="destinations__content">
+                        <div class="destinations__image destinations__image_1">
+                            <picture>
+                                <source media="(min-width: 391px)" srcset="img/Destination1.jpg" type="image/jpeg">
+                                <source media="(max-width: 391px)" srcset="img/Destination1m.jpg" type="image/jpeg">
+                                <img class="destinations__image__image" src="img/Destination1.jpg" alt="Destination1">
+                            </picture>
+                            <p class="destinations__image__text">SPAIN</p>
+                        </div>
+                        <div class="destinations__image destinations__image_2">
+                            <picture>
+                                <source media="(min-width: 391px)" srcset="img/Destination2.jpg" type="image/jpeg">
+                                <source media="(max-width: 391px)" srcset="img/Destination2m.jpg" type="image/jpeg">
+                                <img class="destinations__image__image" src="img/Destination2.jpg" alt="Destination2">
+                            </picture>
+                            <p class="destinations__image__text">JAPAN</p>
+                        </div>
+                        <div class="destinations__image destinations__image_3">
+                            <picture>
+                                <source media="(min-width: 391px)" srcset="img/Destination3.jpg" type="image/jpeg">
+                                <source media="(max-width: 391px)" srcset="img/Destination3m.jpg" type="image/jpeg">
+                                <img class="destinations__image__image" src="img/Destination3.jpg" alt="Destination3">
+                            </picture>
+                            <p class="destinations__image__text">USA</p>
+                        </div>
+                    </div>
+                    <div class="destinations__control">
+                        <div class="destinations__icon"></div>
+                        <div class="destinations__icon _active"></div>
+                        <div class="destinations__icon"></div>
+                    </div>
+                    <div class="destinations__arrows">
+                        <div class="destinations__arrow arrow1"><img src="./img/arrow_orange_bold.svg" alt="left"></div>
+                        <div class="destinations__arrow arrow2"><img src="./img/arrow_orange_bold.svg" alt="left"></div>
+                    </div>
+                </div>
+                <div class="destinations__find">
+                    <form action="#">
+                        <button class="destinations__button _button">
+                            <img class="_button_img" src="img/arrow.svg" alt="arrow">
+                            <span class="destinations__button__text">Find More</span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="page__stories stories">
+                <h2 class="stories__title _title" id="stories">TRAVEL STORIES</h2>
+                <div class="stories_main">
+                    <div class="stories_main_bg">
+                        <div class="stories__container _container">
+                            <div class="stories__content">
+                                <div class="stories_content_block">
+                                    <div class="stories_content_block_image">
+                                        <picture>
+                                            <source media="(min-width: 391px)" srcset="img/stories1.jpg" type="image/jpeg">
+                                            <source media="(max-width: 391px)" srcset="img/stories1_m.jpg" type="image/jpeg">
+                                            <img class="stories_content_image" src="img/stories1.jpg" alt="stories1">
+                                        </picture>
+                                    </div>
+                                    <div class="stories_content_block_text">
+                                        <h3 class="stories_content_title">10 Photos of Attractive Thailand</h3>
+                                        <p class="stories_content_text stories_content_text_desktop">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <br><a href="">Read More</a></p>
+                                        <p class="stories_content_text stories_content_text_mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...<br><a href="">Read More</a></p>
+                                    </div>
+                                </div>
+                                <div class="stories_content_block">
+                                    <div class="stories_content_block_image">
+                                        <picture>
+                                            <source media="(min-width: 391px)" srcset="img/stories2.jpg" type="image/jpeg">
+                                            <source media="(max-width: 391px)" srcset="img/stories2_m.jpg" type="image/jpeg">
+                                            <img class="stories_content_image" src="img/stories2.jpg" alt="stories1">
+                                        </picture>
+                                    </div>
+                                    <div class="stories_content_block_text">
+                                        <h3 class="stories_content_title">Canyonlands National Park, Utah</h3>
+                                        <p class="stories_content_text stories_content_text_desktop">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <br><a href="">Read More</a></p>
+                                        <p class="stories_content_text stories_content_text_mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...<br><a href="">Read More</a></p>
+                                    </div>
+                                </div>
+                                <div class="stories_content_block">
+                                    <div class="stories_content_block_image">
+                                        <picture>
+                                            <source media="(min-width: 391px)" srcset="img/stories3.jpg" type="image/jpeg">
+                                            <source media="(max-width: 391px)" srcset="img/stories3_m.jpg" type="image/jpeg">
+                                            <img class="stories_content_image" src="img/stories3.jpg" alt="stories1">
+                                        </picture>
+                                    </div>
+                                    <div class="stories_content_block_text">
+                                        <h3 class="stories_content_title">I left my heart in the Mountains!</h3>
+                                        <p class="stories_content_text stories_content_text_desktop">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <br><a href="">Read More</a></p>
+                                        <p class="stories_content_text stories_content_text_mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...<br><a href="">Read More</a></p>
+                                    </div>
+                                </div>
+                                <div class="stories_content_block">
+                                    <div class="stories_content_block_image">
+                                        <picture>
+                                            <source media="(min-width: 391px)" srcset="img/stories4.jpg" type="image/jpeg">
+                                            <source media="(max-width: 391px)" srcset="img/stories4_m.jpg" type="image/jpeg">
+                                            <img class="stories_content_image" src="img/stories4.jpg" alt="stories1">
+                                        </picture>
+                                    </div>
+                                    <div class="stories_content_block_text">
+                                        <h3 class="stories_content_title">The Longest journey in my life!</h3>
+                                        <p class="stories_content_text stories_content_text_desktop">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <br><a href="">Read More</a></p>
+                                        <p class="stories_content_text stories_content_text_mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...<br><a href="">Read More</a></p>
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="stories__find">
+                                <form action="#">
+                                    <button class="stories__button _button">
+                                        <img class="_button_img" src="img/arrow.svg" alt="arrow">
+                                        <span class="stories__button__text">See More</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <picture>
+                        <source media="(min-width: 391px)" srcset="img/stories.jpg" type="image/jpeg">
+                        <source media="(max-width: 391px)" srcset="img/stories_m.jpg" type="image/jpeg">
+                        <img class="stories_image _ibg" src="img/stories.jpg" alt="cover">
+                    </picture>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id = 'footer'>
+            <div class="footer__container _container">
+                <div class="footer__my__links">
+                    <a href="https://rs.school/js-stage0/" target="_blank">
+                        <img class="footer__rs__image" src="img/rs_school_logo.svg" alt="rs_school">
+                    </a>
+                    <a href="https://github.com/Nikozyrev" target="_blank">
+                        <img class="footer__github__image" src="img/githublogo.svg" alt="github">
+                    </a>
+                </div>
+                <div class="footer__text">All Rights Reserved © Travel Portal</div>
+                <ul class="footer__social__links">
+                    <li class="footer__social__icon">
+                        <a href="" target="_blank">
+                            <img src="img/instagram.svg" alt="insta">
+                        </a>
+                    </li>
+                    <li class="footer__social__icon">
+                        <a href="" target="_blank">
+                            <img src="img/youtube.svg" alt="youtube">
+                        </a>
+                    </li>
+                    <li class="footer__social__icon">
+                        <a href="" target="_blank">
+                            <img src="img/twitter.svg" alt="twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
