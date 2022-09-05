@@ -1,2 +1,2 @@
-# Travel
-Travel Portal Landing. RS school stage 0 
+# nikozyrev-JSFEPRESCHOOL2022Q2
+Private repository for @nikozyrev
